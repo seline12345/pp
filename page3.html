@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Italiana&family=Marcellus&family=Montserrat:wght@500&family=Newsreader:opsz@6..72&family=Petit+Formal+Script&family=Playfair+Display&family=Radley&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="page3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">  
+        function nextquestion(button_number) {
+            var randomizer = Math.round(Math.random()*7) + 1
+            console.log(randomizer)
+            if (randomizer == 1) {
+                document.getElementsByClassName("button1").src="c.png"
+                }
+            else if (randomizer == 2) {
+                document.getElementsByClassName("button2").src="d.png"
+                }
+            else if (randomizer == 3) {
+                document.getElementsByClassName("button3").src="e.png"
+                }        
+            else if (randomizer == 4) {
+                document.getElementsByClassName("button4").src="f.png"
+                }        
+            else if (randomizer == 5) {
+                document.getElementsByClassName("button5").src="g.png"
+                }
+            else if (randomizer == 6) {
+                document.getElementsByClassName("button6").src="a.png"
+                }
+            else if (randomizer == 7) {
+                document.getElementsByClassName("button7").src="b.png"
+                } }
+    </script>
+    <title>Document</title>
+    <style>
+        button {
+            border: 5px solid black;
+            margin-top: 0px;
+            padding-top: 0px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 40px;
+            margin-left: 15px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: white;
+        }
+        .buttons {
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        line-height: 0px;
+    }
+        .notes {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;       
+            height: 325px;    
+        }
+        #body {
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0px;
+            height: auto;
+            border: 20px solid #FF7C6F
+            ;
+            border-radius: 100px;
+            background: #A8D0E6;
+            
+            padding: 20px;
+        }
+        body {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #f8e9a1;
+        }
+        </style>
+</head>
+<body>
+    <div id="body">
+        <img src="c.png" class="notes">
+        <div class="buttons">
+            <button class="button1" onclick="nextquestion()">C</button>
+            <button class="button2" onclick="nextquestion()">D</button>
+            <button class="button3" onclick="nextquestion()">E</button>
+            <button class="button4" onclick="nextquestion()">F</button>
+            <button class="button5" onclick="nextquestion()">G</button>
+            <button class="button6" onclick="nextquestion()">A</button>
+            <button class="button7" onclick="nextquestion()">B</button>
+</div>
+</div>
+</body>
+</html>
