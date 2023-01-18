@@ -20,45 +20,28 @@
             margin-left: auto;
             margin-bottom: 20px;
             width: 780px;
-            height: 495px;
+            height: 490px;
             background: #f8e9a1;
             border: 20px solid #FF7C6F;
             border-radius: 100px;
-        }
-        #header {
+            align-items: center; }
+            
+        #name {
             font-family: 'DM Sans', sans-serif;
             font-size: 50px;
-            padding: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        #score {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 50px;
+            padding: 20px;
             text-align: center;
             margin-top: 15px;
         }
-        #description {
-            font-family: 'DM Sans', sans-serif;
-            width: 700px;
-            font-size: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        
-        #start {
-            color: black;
-            font-size: 20px;
-            background-color: rgb(203, 199, 199);
-            border: 5px solid white;
-            width: 200px;
-            height: 75px;
-            align-items: center;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            justify-content: center; 
-            border-radius: 15px;  
-        }
 
-        #highscores {
-            font-size: 20px;
+        #menu {
             color: black;
             background-color: rgb(203, 199, 199);
             border: 5px solid white;
@@ -69,8 +52,10 @@
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            justify-content: center;   
-            border-radius: 15px;  ;
+            justify-content: center;  
+            font-size: 40px;
+            text-align: center;
+            border-radius: 15px;
         }
         a {
             text-decoration: none;
@@ -79,18 +64,21 @@
             background-color: #A8D0E6
             ;
         }
-        * {
-            font-family: 'DM Sans', sans-serif;
-        }
+        
     </style>
 </head>
 <body>
     <div id="body">  
-        <h1 id="header">name the note</h1>
-        <p id="description">the challenge is to correctly name as many notes as you can within 30 seconds.</p>  
-        <a href="page2.html"><button id="start">start</button></a>
-        <a href="page5.html"><button id="highscores">high scores</button></a>
+        <p id="name">name: ____</p>  
+        <p id="score">score:____</p>  
+        <a href="page1.html"><button id="menu">menu</button></a>
 </div>
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+    import {name} from './page2.html'
+    import {score} from './page3.html'
+    document.getElementById("name").innerHTML = "name: "+name;
+    document.getElementById("score").innerHTML = "score: "+score;   
+</script>
 </html>
+
