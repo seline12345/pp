@@ -1,7 +1,6 @@
-var name = document.getElementById("name").value;
 var number = 0
 var score = 0
-
+var name = ""
 function check_answer(btn_number) {
 	var status = false
 	if (btn_number == 1 && number == 1) {
@@ -180,8 +179,11 @@ function nextquestion(btn_number) {
 	reset()
 	new_question(btn_number)
 }
+	
+function storeName() {
+	var name = document.querySelector(".play").value
+	document.getElementById("name").innerHTML = "name: "+name
+}
 
-		
 change_picture()
 
-export {score}
